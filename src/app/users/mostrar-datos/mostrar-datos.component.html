@@ -1,0 +1,9 @@
+<div *ngIf="usersList.length > 0" class="user-list-container">
+  <h3>Usuarios Registrados:</h3>
+  <ul>
+    <li *ngFor="let user of usersList">
+      <p><strong>Nombre:</strong> {{ user.nombre }}</p>
+      <p><strong>Correo:</strong> {{ user.correo }}</p>
+    </li>
+  </ul>
+</div>

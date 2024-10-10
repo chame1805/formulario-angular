@@ -1,0 +1,12 @@
+<form [formGroup]="dataForm" (ngSubmit)="envioDatos()">
+    <div id="formulario">
+      <label for="nombre">Nombre</label>
+      <input formControlName="nombre" type="text" required>
+  
+      <label for="correo">Correo electrónico</label>
+      <input formControlName="correo" type="email" required>
+  
+      <button type="submit">Registrar</button>
+    </div>
+  </form>
+  

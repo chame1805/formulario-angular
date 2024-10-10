@@ -1,0 +1,15 @@
+<form [formGroup]="loginForm" (ngSubmit)="login()">
+    <div id="login-form">
+      <label for="nombre">Nombre</label>
+      <input formControlName="nombre" type="text" required>
+  
+      <label for="correo">Correo electrónico</label>
+      <input formControlName="correo" type="email" required>
+  
+      <button type="submit">Iniciar Sesión</button>
+    </div>
+    <div *ngIf="loginError" class="error-message">
+      Credenciales incorrectas. Por favor, intenta de nuevo.
+    </div>
+  </form>
+  
